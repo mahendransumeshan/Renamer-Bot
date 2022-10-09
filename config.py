@@ -8,7 +8,7 @@ class Config(object):
     
     API_HASH = os.environ.get("API_HASH","d31bbec822ee6b1e9c70dd1ba3018aea")
 
-    OUO_IO_API_KEY = ""
+   
 
     MAX_MESSAGE_LENGTH = 4096
 
