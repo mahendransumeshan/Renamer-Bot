@@ -2,11 +2,11 @@ import os
 
 class Config(object):
 
-    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5758713151:AAGqv_s4BqhZDGcf1_pebwzIYY5Z2PwSIXc")
+    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
 
-    APP_ID = int(os.environ.get("APP_ID", 10396835))
+    APP_ID = int(os.environ.get("APP_ID", ))
     
-    API_HASH = os.environ.get("API_HASH","d31bbec822ee6b1e9c70dd1ba3018aea")
+    API_HASH = os.environ.get("API_HASH","")
 
    
 
@@ -18,14 +18,14 @@ class Config(object):
 
     DOWNLOAD_LOCATION = "./DOWNLOADS"
 
-    DB_URI = os.environ.get("DATABASE_URL", "postgres://abgwpysf:jBKrj0LRkvKqqCMuq8waY37V1CQPijuu@jelani.db.elephantsql.com/abgwpysf")
+    DB_URI = os.environ.get("DATABASE_URL", "")
 
-    UPDATE_GROUP = os.environ.get("UPDATE_GROUP", "sdsfhtuyh")
+    UPDATE_GROUP = os.environ.get("UPDATE_GROUP", "")
     
-    UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "sdsfhtuyhd")
+    UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "")
 
     CHUNK_SIZE = int(os.environ.get("CHUNK_SIZE", 128))
 
-    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "5526901717").split())
+    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "").split())
 
     BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "").split())
